@@ -2,6 +2,7 @@ import { Request, Response } from 'express';
 import { handleError } from '../errors/handle.error';
 import SpecialistModel from '../models/specialist.model';
 import mongoose from 'mongoose';
+import BeautyPackageModel from '../models/beautyPackage.model';
 
 export default class SpecialistController {
   constructor() {}
@@ -39,6 +40,11 @@ export default class SpecialistController {
   public async createASpecialist(req: Request, res: Response): Promise<void> {
     try {
       const { name, designation, bio, photoUrl, dateOfBirth } = req.body;
+      const { bid } = req.params;
+
+      if (!mongoose.Types.ObjectId.isValid(bid)) {
+        res.status(404).json({ message: 'Beauty package not found' });
+      }
 
       await Promise.resolve().then(async () => {
         const specialist = await SpecialistModel.create({
@@ -47,6 +53,12 @@ export default class SpecialistController {
           bio,
           photoUrl,
           dateOfBirth,
+        });
+
+        await BeautyPackageModel.findByIdAndUpdate(bid, {
+          $addToSet: {
+            specialists: specialist._id,
+          },
         });
 
         res.status(200).json(specialist);
