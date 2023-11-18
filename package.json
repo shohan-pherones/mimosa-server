@@ -5,6 +5,7 @@
   "license": "MIT",
   "scripts": {
     "start": "node dist/app.js",
+    "start:dev": "nodemon dist/app.js",
     "dev": "nodemon src/app.ts",
     "build": "tsc",
     "lint:check": "eslint . --ext .js,.ts --config .eslintrc-config.js",

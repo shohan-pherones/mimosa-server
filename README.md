@@ -97,6 +97,8 @@ Mimosa is your premier destination for beauty and relaxation. Our parlor and spa
 3. Run `yarn` to install project dependencies.
 4. Start the development server with `yarn dev`.
 
+Or if you have docker and docker-compose installed on your machine, then run `docker-compose build` and `docker-compose up` to run this app. Docker image link: [#https://hub.docker.com/r/spectrashohan/mimosa-server]
+
 ## Conclusion
 
 Mimosa Beauty Parlor and Spa is your one-stop destination for beauty and relaxation. Whether you're looking to unwind with our spa treatments or enhance your beauty with our expert services, Mimosa has everything you need. Book your beauty package today and experience the ultimate pampering.
