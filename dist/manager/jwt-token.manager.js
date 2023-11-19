@@ -9,7 +9,7 @@ dotenv_1.default.config();
 class JWTTokenManager {
     constructor() {
         this.secret = process.env.JWT_SECRET;
-        this.expiresIn = '7d';
+        this.expiresIn = '30d';
     }
     createToken(id) {
         try {

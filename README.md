@@ -18,6 +18,7 @@ Mimosa is your premier destination for beauty and relaxation. Our parlor and spa
 - MongoDB
 - Mongoose
 - TypeScript
+- Docker
 
 ## Models
 
@@ -97,7 +98,7 @@ Mimosa is your premier destination for beauty and relaxation. Our parlor and spa
 3. Run `yarn` to install project dependencies.
 4. Start the development server with `yarn dev`.
 
-Or if you have docker and docker-compose installed on your machine, then run `docker-compose build` and `docker-compose up` to run this app. Docker image link: [#https://hub.docker.com/r/spectrashohan/mimosa-server]
+If you have Docker and Docker Compose installed on your machine, you can simply execute `docker-compose build` and `docker-compose up` to start the app. Additionally, to access the Docker image, you can visit [https://hub.docker.com/r/spectrashohan/mimosa-server](https://hub.docker.com/r/spectrashohan/mimosa-server).
 
 ## Conclusion
 

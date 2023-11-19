@@ -1,8 +1,8 @@
 import { Request, Response } from 'express';
-import { handleError } from '../errors/handle.error';
-import SpecialistModel from '../models/specialist.model';
 import mongoose from 'mongoose';
+import { handleError } from '../errors/handle.error';
 import BeautyPackageModel from '../models/beautyPackage.model';
+import SpecialistModel from '../models/specialist.model';
 
 export default class SpecialistController {
   constructor() {}

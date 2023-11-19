@@ -1,7 +1,7 @@
 import { Request, Response } from 'express';
+import mongoose from 'mongoose';
 import { handleError } from '../errors/handle.error';
 import BeautyPackageModel from '../models/beautyPackage.model';
-import mongoose from 'mongoose';
 
 export default class BeautyPackageController {
   constructor() {}

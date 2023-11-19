@@ -1,6 +1,6 @@
 import express, { Router } from 'express';
-import AuthMiddleware from '../middlewares/auth.middleware';
 import SpecialistController from '../controllers/specialist.controller';
+import AuthMiddleware from '../middlewares/auth.middleware';
 
 const specialistRouter: Router = express.Router();
 

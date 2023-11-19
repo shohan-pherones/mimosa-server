@@ -3,19 +3,19 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
     return (mod && mod.__esModule) ? mod : { "default": mod };
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-const express_1 = __importDefault(require("express"));
 const cors_1 = __importDefault(require("cors"));
-const morgan_1 = __importDefault(require("morgan"));
+const dotenv_1 = __importDefault(require("dotenv"));
+const express_1 = __importDefault(require("express"));
 const express_mongo_sanitize_1 = __importDefault(require("express-mongo-sanitize"));
 const helmet_1 = __importDefault(require("helmet"));
 const hpp_1 = __importDefault(require("hpp"));
 const mongoose_1 = __importDefault(require("mongoose"));
-const dotenv_1 = __importDefault(require("dotenv"));
+const morgan_1 = __importDefault(require("morgan"));
 const auth_route_1 = __importDefault(require("./routes/auth.route"));
-const user_route_1 = __importDefault(require("./routes/user.route"));
 const beautyPackage_route_1 = __importDefault(require("./routes/beautyPackage.route"));
-const specialist_route_1 = __importDefault(require("./routes/specialist.route"));
 const booking_route_1 = __importDefault(require("./routes/booking.route"));
+const specialist_route_1 = __importDefault(require("./routes/specialist.route"));
+const user_route_1 = __importDefault(require("./routes/user.route"));
 class App {
     constructor() {
         this.app = (0, express_1.default)();

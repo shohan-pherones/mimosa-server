@@ -1,7 +1,7 @@
 import { Request, Response } from 'express';
-import UserModel from '../models/user.model';
-import JWTTokenManager from '../manager/jwt-token.manager';
 import { handleError } from '../errors/handle.error';
+import JWTTokenManager from '../manager/jwt-token.manager';
+import UserModel from '../models/user.model';
 
 const jwtInstance = new JWTTokenManager();
 

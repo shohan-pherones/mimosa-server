@@ -4,8 +4,8 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 const mongoose_1 = __importDefault(require("mongoose"));
-const user_model_1 = __importDefault(require("../models/user.model"));
 const handle_error_1 = require("../errors/handle.error");
+const user_model_1 = __importDefault(require("../models/user.model"));
 class UserController {
     constructor() { }
     async getAnUser(req, res) {

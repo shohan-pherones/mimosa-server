@@ -1,10 +1,10 @@
-import { bookingType } from './../types/booking.type';
 import { Request, Response } from 'express';
 import mongoose from 'mongoose';
-import BookingModel from '../models/booking.model';
 import { handleError } from '../errors/handle.error';
 import BeautyPackageModel from '../models/beautyPackage.model';
+import BookingModel from '../models/booking.model';
 import UserModel from '../models/user.model';
+import { bookingType } from './../types/booking.type';
 
 export default class BookingController {
   constructor() {}

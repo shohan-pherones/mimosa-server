@@ -4,9 +4,9 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 const mongoose_1 = __importDefault(require("mongoose"));
-const booking_model_1 = __importDefault(require("../models/booking.model"));
 const handle_error_1 = require("../errors/handle.error");
 const beautyPackage_model_1 = __importDefault(require("../models/beautyPackage.model"));
+const booking_model_1 = __importDefault(require("../models/booking.model"));
 const user_model_1 = __importDefault(require("../models/user.model"));
 class BookingController {
     constructor() { }

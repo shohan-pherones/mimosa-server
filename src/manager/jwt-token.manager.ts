@@ -9,7 +9,7 @@ export default class JWTTokenManager {
 
   constructor() {
     this.secret = process.env.JWT_SECRET as string;
-    this.expiresIn = '7d';
+    this.expiresIn = '30d';
   }
 
   public createToken(id: string): string {

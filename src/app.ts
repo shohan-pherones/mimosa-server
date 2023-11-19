@@ -1,16 +1,16 @@
-import express, { Application, Request, Response } from 'express';
 import cors from 'cors';
-import morgan from 'morgan';
+import dotenv from 'dotenv';
+import express, { Application, Request, Response } from 'express';
 import mongoSenitize from 'express-mongo-sanitize';
 import helmet from 'helmet';
 import hpp from 'hpp';
 import mongoose from 'mongoose';
-import dotenv from 'dotenv';
+import morgan from 'morgan';
 import authRouter from './routes/auth.route';
-import userRouter from './routes/user.route';
 import beautyPackageRouter from './routes/beautyPackage.route';
-import specialistRouter from './routes/specialist.route';
 import bookingRouter from './routes/booking.route';
+import specialistRouter from './routes/specialist.route';
+import userRouter from './routes/user.route';
 
 class App {
   private app: Application;

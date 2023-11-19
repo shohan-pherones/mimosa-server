@@ -1,7 +1,7 @@
 import { Request, Response } from 'express';
 import mongoose from 'mongoose';
-import UserModel from '../models/user.model';
 import { handleError } from '../errors/handle.error';
+import UserModel from '../models/user.model';
 
 export default class UserController {
   constructor() {}
